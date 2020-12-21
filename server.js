@@ -95,8 +95,8 @@ app.get('/flickr-api', function(req, res) {
 });
 
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.port || 3000;
 
-const server = app.listen(PORT, () => {
-    console.log(`Express running → PORT ${server.address().port}`);
+app.listen(port, () => {
+    console.log(`running.`);
 });
