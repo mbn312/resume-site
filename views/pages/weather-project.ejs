@@ -1,0 +1,78 @@
+<%- include ("../partials/header") %>
+<%- include ("../partials/navbar") %>
+<div class="wrapper" id="main">
+    <br>
+    <h1 id="heading" style="text-align:center">Weather Forecast</h1>
+<hr>
+<div class="container">
+  <form>
+    <div class="form-group row">
+      <label for="player1" class="col-sm-2 col-form-label">Latitude:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="latitude_input" value ="40.0150" placeholder="Input Latitude">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="player2" class="col-sm-2 col-form-label">Longitude:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="longitude_input" value ="-105.2705" placeholder="Input Longitude">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-5 ">
+        <button type="button" class="btn btn-primary" onclick="get_weather()">Check Weather</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="row">
+      <div class="col-2">
+
+        <img id="image_today" class="img-fluid" src="../resources/img/clear-day.png" alt="Today's Weather Icon">
+      </div>
+      <div class="col-10">
+        <h5>
+          Local Date/Time: <span id="local_time"></span><br>
+          Precipitation: <span id="precip_today"></span><br>
+          Humidity: <span id="humidity_today"></span><br>
+          Wind Speed: <span id="wind_today"></span><br>
+          Summary: <span id="summary_today"></span>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+
+  </div>
+  <div class="col-4">
+    <div class="card">
+      <div id="thermometer_outer">
+        <div id="thermometer_inner" style="height:0%"> <p id="temp_today" class="h3"> 0 F</p></div>
+      </div>
+      <div class="card-body">
+          <h5 class="text-center">Thermometer</h5>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+    <h2 class="h1" style="text-align:center;">5 Day Forecast</h2>
+    <hr>
+    <div class="row" id="5_day_forecast">
+
+    </div>
+    <br>
+</div>
+<script>
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+
+    function showPosition(position) {
+        latitude_input.value = position.coords.latitude;
+        longitude_input.value = position.coords.longitude;
+    }
+</script>
+<%- include ("../partials/footer") %>

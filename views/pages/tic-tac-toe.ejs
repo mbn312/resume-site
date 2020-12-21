@@ -1,0 +1,63 @@
+<%- include ("../partials/header") %>
+<%- include ("../partials/navbar") %>
+
+
+<div class="wrapper" id="main">
+	<div class="jumbotron jumbotron-fluid">
+    	<div class="container">
+       	 <h1>Tic-Tac-Toe</h1>
+  	</div>
+</div>
+<div class="container">
+	<form>
+	  <div class="form-group row">
+	    <label for="player1" class="col-sm-2 col-form-label">Player 1:</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="player1_id" placeholder="player1_name">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="player2" class="col-sm-2 col-form-label">Player 2:</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="player2_id" placeholder="player2_name">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <div class="col-sm-5 ">
+	      <button type="button" class="btn btn-primary" onclick="begin_play()">Begin Play</button>
+	      <button type="button" class="btn btn-primary" onclick="reset_play()">Reset Play</button>
+	    </div>
+	  </div>
+	</form>
+</div>
+<div class ="container">
+
+	<div id ="turn_info">
+		Game has not begun.
+	</div>
+	<br/>
+</div>
+
+<div class="container">
+<table class="table table-bordered" style="border-width:thick;">
+  <tbody id="game_board">
+    <tr>
+      <td id="A1" style="border-width:thick;vertical-align:middle" onclick="play('A1')"></td>
+      <td id="A2" style="border-width:thick;vertical-align:middle" onclick="play('A2')"></td>
+      <td id="A3" style="border-width:thick;vertical-align:middle" onclick="play('A3')"></td>
+    </tr>
+    <tr>
+      <td id="B1" style="border-width:thick;vertical-align:middle" onclick="play('B1')"></td>
+      <td id="B2" style="border-width:thick;vertical-align:middle" onclick="play('B2')"></td>
+      <td id="B3" style="border-width:thick;vertical-align:middle" onclick="play('B3')"></td>
+    </tr>
+    <tr>
+      <td id="C1" style="border-width:thick;vertical-align:middle" onclick="play('C1')"></td>
+      <td id="C2" style="border-width:thick;vertical-align:middle" onclick="play('C2')"></td>
+      <td id="C3" style="border-width:thick;vertical-align:middle" onclick="play('C3')"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<%- include ("../partials/footer") %>

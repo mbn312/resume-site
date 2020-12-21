@@ -1,0 +1,71 @@
+<%- include ("../partials/header") %>
+<%- include ("../partials/navbar") %>
+<div class="wrapper" id="main">
+    <div class="jumbotron jumbotron-fluid" style="padding-left:1%;padding-right:1%;padding-bottom:50px;border-radius:1">
+        <h1 style="margin-left:5%;margin-right:5%">Education</h1>
+        <hr class="my-4">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+          <div class="card" height="470px" width="410px">
+           <img class="card-img-top" id="school_img" src="../resources/img/school.png" alt="School Image" height="390px" width="410px">
+            <div class="card-body">
+              <select class="custom-select" style="text-align-last:center" id="selected_school" onchange="selectSchool()">
+                <option value="0" selected>  Select School </option>
+                <option value="1"> University of Colorado, Boulder</option>
+                <option value="2"> Santa Barbara City College</option>
+                <option value="3"> Tesoro High School</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="table-responsive">
+            <table class="table">
+              <tr style="height:94px">
+                <th style="text-align:left;vertical-align:middle">School:</th>
+                <td style="text-align:left;vertical-align:middle" id="school"></td>
+              </tr>
+              <tr style="height:94px">
+                <th style="text-align:left;vertical-align:middle">Degree:</th>
+                <td style="text-align:left;vertical-align:middle" id="degree"></td>
+              </tr>
+              <tr style="height:94px">
+                <th style="text-align:left;vertical-align:middle">Attended:</th>
+                <td style="text-align:left;vertical-align:middle" id="attended"></td>
+              </tr>
+              <tr style="height:94px">
+                <th style="text-align:left;vertical-align:middle">GPA:</th>
+                <td style="text-align:left;vertical-align:middle" id="gpa"></td>
+              </tr>
+              <tr style="height:94px">
+                <th style="text-align:left;vertical-align:middle">Additional Notes:</th>
+                <td style="text-align:left;vertical-align:middle" id="notes"></td>
+              </tr>
+              <tr>
+                <th></th>
+                <td> <button class="myButton" href="#transcriptModal"  id="list_grades_button" style="float:right;visibility:hidden" data-toggle="modal" onclick="alert('not working')"> View Transcript </button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="school_details" style="visibility:hidden;margin:15px">
+          <a id="transcript_button" href="">View Transcript PDF</a>
+        </div>
+      </div>
+</div>
+<div id="transcriptModal" class="modal fade" >
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content" style=" background:#272727;background: linear-gradient(149deg, #2b2b2b 0%, #313131 60%,rgb(204, 121, 32) 90%); border-color:#272727">
+			<div class="modal-header">
+				<h4 class="modal-title" id="transcript_title" style="color:white"></h4>
+				<button type="button" class="close" style="color:white" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body" id="transcript_pdf">
+        <embed src="../resources/pdf/Resume.pdf" frameborder="0" width="100%" height="800px">
+      </div>
+    </div>
+  </div>
+</div>
+<%- include ("../partials/footer") %>

@@ -1,0 +1,54 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+
+.container{
+    padding:2%;
+    opacity: 0.8;
+    background: #ffffff;
+    height:100%;
+    bottom:0;
+ }
+
+
+td,tr {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wrapper {
+    position:relative;
+    transition: margin-left .5s, margin-right.5s;
+    width:70%;
+    margin-left:16%;
+    margin-right:14%;
+    padding:2%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    opacity: 0.90;
+    background: #ffffff;
+}
+
+
+.myButton {
+    background: #313131;
+    background-image: -webkit-linear-gradient(top, #313131, #464646);
+    background-image: -moz-linear-gradient(top, #313131, #464646);
+    background-image: -ms-linear-gradient(top, #313131, #464646);
+    background-image: -o-linear-gradient(top, #313131, #464646);
+    background-image: -webkit-gradient(to bottom, #313131, #464646);
+    font-family: 'Times New Roman', Times, serif;
+    border-color: #272727;
+    color: #ffffff;
+    padding:5px 10px 5px 10px;
+}
+
+.myButton:hover {
+    background: rgb(204, 121, 32);
+    background: linear-gradient(149deg, rgb(204, 121, 32) 0%, #313131 40%, #272727 75%);
+}
+

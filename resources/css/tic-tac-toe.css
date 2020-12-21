@@ -1,0 +1,37 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+/*
+.container{
+    margin-top: 2%;
+    padding:2%;
+    width: 200cm;
+    opacity: 0.9;
+    background: #FFFFFF;
+    height:100%;
+ }
+*/
+
+
+td,tr {
+    height: 175px;
+    font-size: 40px;
+    width:33%;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.wrapper {
+    position:fixed;
+    transition: margin-left .5s, margin-right.5s;
+    width:70%;
+    margin-left:16%;
+    margin-right:14%;
+    padding:2%;
+    height:100%;
+    opacity: 0.9;
+    background: #ffffff;
+}

@@ -1,0 +1,58 @@
+<%- include ("../partials/header") %>
+<%- include ("../partials/navbar") %>
+
+<div class="wrapper" id="main">
+	<div class="jumbotron jumbotron-fluid" style="padding-left:1%;padding-right:1%;padding-bottom:50px;border-radius:1">
+    <h1 style="margin-left:5%;margin-right:5%">Projects</h1>
+    <hr class="my-4">
+    <p style="margin-left:5%;margin-right:5%;font-style:italic"> * Note: Click on project name to access project. </p>
+</div>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Skills Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="vertical-align:middle"  onclick='window.location.href = "https://protrack-5.herokuapp.com/";'>ProTrack</td>
+            <td style="text-align:left;vertical-align:middle">A web application that is designed to aid project management. ProTrack uses Agile/Scrum as it’s underlying framework as the application is geared towards software development. 
+                Like most web applications, ProTrack has a feature to sign up for an account and then log in and log out of the application based on a username and password. Once a user is logged onto the application, there are multiple main 
+                features that support Agile/Scrum practices. The most general feature of this application is the ability to create shared projects among team members. This allows all members of a team to view tasks related to their team. 
+                Another feature is the creation of user tasks, which mimic the Agile/Scrum idea of “user stories” These tasks exist in three columns, “to-do”, “in-progress”, and “complete” - this feature was implemented by using the HTML card 
+                class. In addition to having tasks status columns, there are also task due dates. This allows team members to plan out work and have an estimated date to when a particular task is finalized. Our product makes large projects easier to 
+                manage and better organized as it allows projects to be split up into small tasks among team members.</td>
+            <td style="vertical-align:middle">HTML, Javascript, NodeJS, REST, CSS, PostgreSQL</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:middle" onclick="window.location.href ='https://mattnguyen-final.herokuapp.com/';">Book Reviews</td>
+            <td style="text-align:left;vertical-align:middle">A simple program that takes an input search and makes an AJAX call to the penguin random house API. Upon receiving the JSON response from the API, cards are created with the book 
+                title, author name, and a button to review the book. Pressing the button opens up a modal form in which the user can write a review for the book which is added to a database upon submission. Reviews can be seen in the reviews 
+                page of the website.</td>
+            <td>HTML, Javascript, NodeJS, REST, CSS, PostgreSQL, EJS</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:middle" onclick="window.location.replace('/weather-project')">Weather</td>
+            <td style="text-align:left;vertical-align:middle"> A simple program that takes the users longitude and latitude and makes an API call to get the current weather and the 5 day forecast for that location. The thermometer will change color 
+                based on the current temperature (blue when cold, gray when neutral, red when hot). User can also input in any longitude and latitude using the input fields at the top of the page. If the user does allow page to get their current location,
+                no information will be displayed until a longitude and latitude are entered in (the default location is Boulder, Colorado).</td>
+            <td style="vertical-align:middle">HTML, Javascript, APIs</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:middle" onclick="window.location.replace('/tic-tac-toe')">Tic-Tac-Toe</td>
+            <td style="text-align:left;vertical-align:middle"> Basic Tic Tac Toe game.</td>
+            <td style="vertical-align:middle">HTML, Javascript</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:middle" onclick="window.location.replace('/flickr-api')">Flickr API</td>
+            <td style="text-align:left;vertical-align:middle"> Program takes the inputted search tags and makes an AJAX call to the flickr API which responds with a JSON response. Afterwards, the program creates the selected amount of cards with the images and
+              titles relating to the given search tags. If the user reaches the bottom of the page, the program will create more cards containing images and titles relating to the search. This will continue until all of the images relating to the search are loaded.
+              If no search tag is inputted by the user, the program will select the photos from the most recent photos uploaded.</td>
+            <td style="vertical-align:middle">HTML, Javascript, APIs</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<%- include ("../partials/footer") %>

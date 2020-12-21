@@ -1,0 +1,32 @@
+<%- include ("../partials/header") %>
+<%- include ("../partials/navbar") %>
+<div class="header" style="background-color:#3c3c3c">
+    <br>
+    <div class="row" style="margin-left:27%">
+        <div class="col-md-3">
+            <select name="photo_amount" id="photo_amount" class="custom-select custom-select-sm">
+                <option selected value="0">--Number Of Photos--</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="70">70</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <input type="text" class="form-control form-control-sm" id="tags" placeholder="Enter Search Tags">
+        </div>
+
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" style="background-color:rgb(5, 5, 238); border-color:darkblue" onclick="resetPage();makeApiCall()">Submit</button>
+        </div>
+    </div>
+    <br>
+</div>
+
+<div class="wrapper" id="main">
+    <div id="images"> 
+
+    </div>
+</div>
+
+<%- include ("../partials/footer") %>

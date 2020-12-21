@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>
+      <% if(my_title){ %>
+        <%=my_title %> 
+      <% } %>
+    </title>
+    <!-- Icon for Tab -->
+	<link rel='icon' href='../resources/img/main.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link href="../resources/css/sidebar.css" rel="stylesheet">
+	<% if(typeof local_css == 'string' && local_css){ %>
+	 <link href="../resources/css/<%=local_css%>" rel="stylesheet">
+	<% } %>
+	
+  </head>
+  <body>

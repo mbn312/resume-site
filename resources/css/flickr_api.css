@@ -1,0 +1,17 @@
+body{
+    /*background-image: url('');*/
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+
+.wrapper {
+    position:relative;
+    transition: margin-left .5s, margin-right.5s;
+    width:70%;
+    margin-left:16%;
+    margin-right:14%;
+    padding:2%;
+    height:100%;
+}
