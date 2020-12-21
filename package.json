@@ -1,0 +1,20 @@
+{
+  "name": "resume-site",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000r\u0000e\u0000s\u0000u\u0000m\u0000e\u0000-\u0000s\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbn312/resume-site.git"
+  },
+  "author": "matt nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbn312/resume-site/issues"
+  },
+  "homepage": "https://github.com/mbn312/resume-site#readme"
+}
