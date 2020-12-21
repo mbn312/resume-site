@@ -95,7 +95,7 @@ app.get('/flickr-api', function(req, res) {
 });
 
 
-const port = process.env.port || 8080;
+const port = process.env.port || 8081;
 
 app.listen(port, () => {
     console.log(`running on port:` + port);
