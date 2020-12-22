@@ -4,8 +4,37 @@
     <div class="jumbotron jumbotron-fluid" style="padding-left:1%;padding-right:1%;padding-bottom:50px;border-radius:1">
         <h1 style="margin-left:5%;margin-right:5%">Contact Info</h1>
         <hr class="my-4">
-        <p style="margin-left:5%;margin-right:5%"> Coming Soon. </p>
     </div>
+    <div class="container">
+    <div class="table-responsive">
+        <table class="table">
+          <tr style="height:94px">
+            <th style="text-align:center;vertical-align:middle;font-size:20px">Name:</th>
+            <td style="text-align:center;vertical-align:middle;font-size:20px">Matt Nguyen</td>
+          </tr>
+          <tr style="height:94px" onclick="window.location.href ='mailto: mbn312@gmail.com';">
+            <th style="text-align:center;vertical-align:middle;font-size:20px">Email:</th>
+            <td style="text-align:center;vertical-align:middle;font-size:20px">mbn312@gmail.com</td>
+          </tr>
+          <tr style="height:94px">
+            <th style="text-align:center;vertical-align:middle;font-size:20px">Phone:</th>
+            <td style="text-align:center;vertical-align:middle;font-size:20px">(949)288-1197</td>
+          </tr>
+          <tr style="height:94px" onclick="window.location.href ='https://linkedin.com/in/mattnguyen24/';">
+            <th style="text-align:center;vertical-align:middle;font-size:20px">Linkedin:</th>
+            <td style="text-align:center;vertical-align:middle;font-size:20px">linkedin.com/in/mattnguyen24/</td>
+          </tr>
+          <tr style="height:94px" onclick="window.location.href ='https://github.com/mbn312/';">
+            <th style="text-align:center;vertical-align:middle;font-size:20px">Github:</th>
+            <td style="text-align:center;vertical-align:middle;font-size:20px">github.com/mbn312</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td> <button class="myButton" href="#transcriptModal"  id="list_grades_button" style="float:right;visibility:hidden" data-toggle="modal" onclick="alert('not working')"> View Transcript </button></td>
+          </tr>
+        </table>
+      </div>
+      </div>
 </div>
 
 <%- include ("../partials/footer") %>

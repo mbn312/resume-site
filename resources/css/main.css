@@ -1,5 +1,6 @@
 body{
     background-image: url('../img/background.jpg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height:100%;
@@ -7,7 +8,6 @@ body{
 
 .container{
     padding:2%;
-    opacity: 0.8;
     background: #ffffff;
     height:100%;
     bottom:0;

@@ -4,13 +4,13 @@
 body{
 /*image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fopenweathermap.org%2F&psig=AOvVaw20P3Gfg93XrGNztO2nPhr0&ust=1585803443098000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDXlKq4xugCFQAAAAAdAAAAABAD*/
 background-image: url('../img/weather.png');
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 
 .wrapper {
-    position:fixed;
     transition: margin-left .5s, margin-right.5s;
     width:70%;
     margin-left:16%;
