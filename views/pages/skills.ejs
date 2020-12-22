@@ -1,11 +1,171 @@
 <%- include ("../partials/header") %>
 <%- include ("../partials/navbar") %>
-<div class="wrapper" id="main">
-    <div class="jumbotron jumbotron-fluid" style="padding-left:1%;padding-right:1%;padding-bottom:50px;border-radius:1">
+<div class="wrapper" style="padding:0%;padding-bottom:2%" id="main">
+    <div class="jumbotron jumbotron-fluid" style="margin:2%;padding-left:1%;padding-right:1%;padding-bottom:50px;border-radius:1">
         <h1 style="margin-left:5%;margin-right:5%">Skills</h1>
         <hr class="my-4">
         <p style="margin-left:5%;margin-right:5%"> Coming Soon. </p>
     </div>
+    <div style="padding-left:7%;padding-right:7%">
+        <hr class="my-4">
+        <div class="row">
+        <h3 style="margin-left:30px">Coding Languages:</h3>
+        <div class="ml-auto mr-3">
+            <button id="languages" class="myButton" style="margin-right:30px;padding-right:15px;padding-left:15px;" data-toggle="collapse" data-target="#coding_languages" onclick="collapseButton('languages')">Expand</button>
+        </div>
+        </div>
+        <div class="collapse" id="coding_languages">
+        <hr class="my-4">
+        <div class="row" style="text-align:center;font-size:18px;font-weight:bold">
+        <div class="col-4">
+            <p>C++</p>
+            <p>C</p>
+            <p>Assembly</p>
+            <p>SQL</p>
+        </div>
+        <div class="col-4">
+            <p>Python</p>
+            <p>Javascript</p>
+            <p>HTML</p>
+        </div>     
+        <div class="col-4">
+            <p>Java</p>
+            <p>Scala</p>
+            <p>CSS</p>
+        </div>      
+        </div> 
+        </div>      
+        <hr class="my-4">
+    </div>
+    <div style="padding-left:7%;padding-right:7%">
+        <hr class="my-4">
+        <div class="row">
+            <h3 style="margin-left:30px">Database Management:</h3>
+            <div class="ml-auto mr-3">
+                <button id="database" class="myButton" style="margin-right:30px;padding-right:15px;padding-left:15px;" data-toggle="collapse" data-target="#database_management" onclick="collapseButton('database')">Expand</button>
+            </div>
+        </div>
+        <div class="collapse" id="database_management">
+        <hr class="my-4">
+        <div class="row" style="text-align:center;font-size:18px;font-weight:bold">
+        <div class="col-4">
+            <p>PostgreSQL</p>
+        </div>
+        <div class="col-4">
+            <p>MySQL</p>
+        </div>     
+        <div class="col-4">
+            <p>MongoDB</p>
+        </div>      
+        </div>
+        </div>    
+        <hr class="my-4">
+    </div>
+    <div style="background-color:#ffffff;opacity:9;padding-left:7%;padding-right:7%">
+        <hr class="my-4">
+        <div class="row">
+            <h3 style="margin-left:30px">Tools:</h3>
+            <div class="ml-auto mr-3">
+                <button id="tools_button" class="myButton" style="margin-right:30px;padding-right:15px;padding-left:15px;" data-toggle="collapse" data-target="#tools" onclick="collapseButton('tools_button')">Expand</button>
+            </div>
+        </div>
+        <div class="collapse" id="tools">
+        <hr class="my-4">
+        <div class="row" style="text-align:center;font-size:18px;font-weight:bold">
+        <div class="col-4">
+            <p>MS Visual Studios</p>
+            <p>REST</p>
+        </div>
+        <div class="col-4">
+            <p>Eclipse</p>
+            <p>Git</p>
+        </div>     
+        <div class="col-4">
+            <p>NodeJS</p>
+            <p>EJS</p>
+        </div>      
+        </div> 
+        </div>      
+        <hr class="my-4">
+    </div>
+    <div style="background-color:#ffffff;opacity:9;padding-left:7%;padding-right:7%">
+        <hr class="my-4">
+        <div class="row">
+            <h3 style="margin-left:30px">Operating Systems:</h3>
+            <div class="ml-auto mr-3">
+                <button id="os" class="myButton" style="margin-right:30px;padding-right:15px;padding-left:15px;" data-toggle="collapse" data-target="#operating_systems" onclick="collapseButton('os')">Expand</button>
+            </div>
+        </div>
+        <div class="collapse" id="operating_systems">
+        <hr class="my-4">
+        <div class="row" style="text-align:center;font-size:18px;font-weight:bold">
+        <div class="col-6">
+            <p>Windows</p>
+        </div>
+        <div class="col-6">
+            <p>Linux (Ubuntu)</p>
+        </div>         
+        </div>   
+        </div>    
+        <hr class="my-4">
+    </div>
+    <div style="background-color:#ffffff;opacity:9;padding-left:7%;padding-right:7%">
+        <hr class="my-4">
+        <div class="row">
+            <h3 style="margin-left:30px">All Courses Taken:</h3>
+            <div class="ml-auto mr-3">
+                <button id="course_button" class="myButton" style="margin-right:30px;padding-right:15px;padding-left:15px;" data-toggle="collapse" data-target="#courses" onclick="collapseButton('course_button')">Expand</button>
+            </div>
+        </div>
+        <div class="collapse" id="courses">
+        <hr class="my-4">
+            <h4 style="padding-left:30px">University of Colorado, Boulder</h4>
+            <ul>
+                <li>CSCI 3202 - Introduction to Artificial Intelligence (Currently Enrolled)</li>
+                <li>CSCI 3002 - Fundamentals of Human Computer Interaction (Currently Enrolled)</li>
+                <li>CSCI 3302 - Introduction to Robotics (Currently Enrolled)</li>
+                <li>CSCI 3202 - Intro to Artificial Intelligence (Currently Enrolled)</li>
+                <li>CSCI 4830-001 - Cyber Security (Currently Enrolled)</li>
+                <li>CSCI 3104 - Algorithms</li>
+                <li>CSCI 3308 - Software Dev Methods and Tools</li>
+                <li>CSCI 3287 - Database Systems</li>
+                <li>CSCI 3022 - Intro to Data Sci w/ Prob</li>
+                <li>CSCI 3155 - Principles of Programming Languages</li>
+                <li>WRTG 3030 - Writing on Science and Society (Currently Enrolled)</li>
+            </ul>
+            <br>
+            <h4 style="padding-left:30px">Santa Barbara City College</h4>
+            <ul>
+                <li>CS 108 - Discrete Structures (Mathematics)</li>
+                <li>CS 132 - Digital Logic Design</li>
+                <li>CS 107 - Computer Architecture & Organization</li>
+                <li>CS 140 - Object-Oriented Programming Using C++</li>
+                <li>CS 137 - C Programming</li>
+                <li>CS 106 - Theory and Practice II (Java)</li>
+                <li>CS 105 - Theory and Practice I (Java)</li>
+                <li>PHYS 123 - Heat, Light and Modern Physics</li>
+                <li>PHYS 122 - Electricity and Magnetism</li>
+                <li>PHYS 121 - Mechanics of Solids and Fluids</li>
+                <li>MATH 220 - Differential Equations</li>
+                <li>MATH 210 - Linear Algebra</li>
+                <li>MATH 200 - Multivariable Calculus</li>
+                <li>ENG 111 - Critical Think/Comp Literature</li>
+                <li>COMM 121 - Interpersonal Communication</li>
+                <li>AJ 105 - Diversity, Law and Justice</li>
+                <li>LIBR 101 - Information Literacy</li>
+            </ul>
+            <br>
+            <h4 style="padding-left:30px">Tesoro High School</h4>
+            <ul>
+                <li>AP Calculus BC</li>
+                <li>AP Calculus AB</li>
+                <li>AP Computer Science</li>
+                <li>AP English Language and Composition</li>
+                <li>AP US History</li>
+                <li>AP Enviromental Science</li>
+            </ul>
+    </div>
+    <hr class="my-4">
 </div>
 
 <%- include ("../partials/footer") %>

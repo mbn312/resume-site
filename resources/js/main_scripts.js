@@ -70,3 +70,11 @@ function listGrades(school) {
         document.getElementById("transcript_title").innerHTML = 'SBCC Transcript'
     }
 }
+
+function collapseButton(id) {
+    if(document.getElementById(id).innerHTML == "Expand") {
+        document.getElementById(id).innerHTML = "Collapse";
+    } else {
+        document.getElementById(id).innerHTML = "Expand";
+    }
+}
